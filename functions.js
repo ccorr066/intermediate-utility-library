@@ -10,17 +10,22 @@ function add(input1, input2) {
    // R: a single JavaScript value
    return input1 + input2;
 }
-function add(input1, input2) {
+let addNewArr = ["How", "old", "are", "you", "?", 28];
+function addSpliceValue(input1, input2, addValue) {
    // A1: any JavaScript value
    // A2: any JavaScript value
    // R: a single JavaScript value
-   return input1 + input2;
+   let removedItems = addNewArr.splice(input1, input2, addValue);
+   return addNewArr.join(" ");
 }
-function add(input1, input2) {
-   // A1: any JavaScript value
-   // A2: any JavaScript value
-   // R: a single JavaScript value
-   return input1 + input2;
+let oldArr = ["How", "are", "you", "doing", "today"];
+
+function spliceTheWord(input1, input2) {
+   // A1: let oldArr is an array of object
+   // A2: the function carries to arguements inside that will called in the return
+   // A3: newArr is where splice is coming to remmove strings from the oldArr. the user will input the values of the position of the array
+   let newArr = oldArr.splice(input1, input2).join(" ");
+   return newArr;
 }
 function randomRange(myMin, myMax) {
    return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
@@ -44,9 +49,11 @@ var celebrity = [
    },
 ];
 function contacts(name1, prop) {
-   // A1: any JavaScript value
-   // A2: any JavaScript value
-   // R: a single JavaScript value
+   // A1: the code above is an array of objects
+   // A2: variable num and text take on the value when the condition statement is reached
+   // A3: a for loop grabbing the length of inside of the array
+   // A4: condition statement if else to, test whether the user input matches from the array of objects
+   //R: will return a phone number from a celebrity or will return text saying either no such property or no such celebrity exists
    var num = "";
    var text = "";
    for (var x = 0; x < celebrity.length; x++) {
@@ -64,9 +71,9 @@ function contacts(name1, prop) {
 }
 
 function headsOrTails(input1) {
-   // A1: any JavaScript value
-   // A2: any JavaScript value
-   // R: a single JavaScript value
+   // A1: variable counter will determine the tally between heads or tails
+   // A2: the conditional statment to determine whether if the user picks heads or tails
+   // R: will return either heads or tails and keep tally of which is winnning
    var counter = 0;
    if (input1 == "heads") {
       counter++;
