@@ -1,20 +1,33 @@
-function add(input1, input2) {
-   // A1: any JavaScript value
-   // A2: any JavaScript value
-   // R: a single JavaScript value
+function variableTypeOf(input1, input2) {
+   // A1:
+   // A2:
+   // R:
    return input1 + input2;
 }
-function add(input1, input2) {
-   // A1: any JavaScript value
-   // A2: any JavaScript value
-   // R: a single JavaScript value
-   return input1 + input2;
+let randomStuff = [
+   "jello",
+   "water",
+   "color",
+   "football",
+   "basketball",
+   "protein",
+];
+function elementIndexOf(userInput) {
+   // A1: randomStuff is an array with strings inside
+   // A2: a conditional statement that makes sure that randomStuff doesnt reach -1. its the default of indexOf. indexOf searches inside the array to make sure the string is in the array.
+   // R: a boolean against what the user inputs
+   if (randomStuff.indexOf(userInput) != -1) {
+      return true;
+   } else {
+      return false;
+   }
+   return userInput;
 }
 let addNewArr = ["How", "old", "are", "you", "?", 28];
 function addSpliceValue(input1, input2, addValue) {
-   // A1: any JavaScript value
-   // A2: any JavaScript value
-   // R: a single JavaScript value
+   // A1:let addNewArr is an array of object
+   // A2:removedItems is equal to addNewArr to take out strings from addNewArr and replaces with what the user inputs
+   // R: gives a result of what the user extracted and added together in one sentence. the join makes is readable by removing the commas.
    let removedItems = addNewArr.splice(input1, input2, addValue);
    return addNewArr.join(" ");
 }
