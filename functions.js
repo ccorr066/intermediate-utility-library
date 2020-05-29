@@ -25,7 +25,7 @@ function elementIndexOf(userInput) {
 }
 let addNewArr = ["How", "old", "are", "you", "?", 28];
 function addSpliceValue(input1, input2, addValue) {
-   // A1:let addNewArr is an array of object
+   // A1:let addNewArr is an array with strings inside
    // A2:removedItems is equal to addNewArr to take out strings from addNewArr and replaces with what the user inputs
    // R: gives a result of what the user extracted and added together in one sentence. the join makes is readable by removing the commas.
    let removedItems = addNewArr.splice(input1, input2, addValue);
@@ -34,7 +34,7 @@ function addSpliceValue(input1, input2, addValue) {
 let oldArr = ["How", "are", "you", "doing", "today"];
 
 function spliceTheWord(input1, input2) {
-   // A1: let oldArr is an array of object
+   // A1: let oldArr is an array with strings
    // A2: the function carries to arguements inside that will called in the return
    // A3: newArr is where splice is coming to remmove strings from the oldArr. the user will input the values of the position of the array
    let newArr = oldArr.splice(input1, input2).join(" ");
