@@ -2,7 +2,6 @@ function variableTypeOf(num) {
    // A1:
    // A2:
    // R:
-   console.log(typeof num);
    return typeof num;
 }
 let randomStuff = [
