@@ -1,8 +1,9 @@
-function variableTypeOf(input1, input2) {
+function variableTypeOf(num) {
    // A1:
    // A2:
    // R:
-   return input1 + input2;
+   console.log(typeof num);
+   return typeof num;
 }
 let randomStuff = [
    "jello",
